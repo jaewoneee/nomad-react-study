@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-function App() {
+function CleanUp() {
   const [minutes, setMinutes] = useState(0);
   const [flip, setFlip] = useState(false);
   const onchange = (e) => {
@@ -45,7 +45,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="CleanUp">
       <h1>Super Converter</h1>
       <label htmlFor="minutes">Minutes</label>
       <input
@@ -70,4 +70,4 @@ function App() {
   );
 }
 
-export default App;
+export default CleanUp;
