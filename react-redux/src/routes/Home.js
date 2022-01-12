@@ -5,15 +5,18 @@ import Todo from "../components/ToDo";
 
 function Home({toDos, addTodo}){
     const [text, setText] = useState("");
+
     function onChange(e){
         setText(e.target.value);
 
     }
+
     function onSubmit(e){
         e.preventDefault();
         addTodo(text);
         setText("");
     }
+    
     return (<>
     <h1>Todo</h1>
     <form>
